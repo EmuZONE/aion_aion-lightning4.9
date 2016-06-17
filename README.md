@@ -3,6 +3,8 @@ Open Source For Everyone! No time to lose dont wait for Aion-core/Encom/Falke an
 We Searching For More Help With Bugs/Fixes we never ask for money you Want to join or team? contact michelgorter@outlook.com 
 or add thesnakes on skype with more devs we can work faster! everyone is welcome! 
 
+Dont forget to give us a star :)
+
 # You want to see the emulator in action?
 http://www.insaneaion.com
 
