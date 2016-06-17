@@ -4,4 +4,8 @@ We Searching For More Help With Bugs/Fixes You Want to Join or Team? contact mic
 or add thesnakes on skype
 with more devs we can do more work!
 
+# You want to see the emulator in action check
+http://www.insaneaion.com
+
 # TODO
+List is in progress coming soon!
