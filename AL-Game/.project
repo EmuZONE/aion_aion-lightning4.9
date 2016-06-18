@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Aion-Lightning-Emulator 4.9</name>
+	<name>Aion-Lightning-Emulator</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -21,11 +21,6 @@
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
 	<linkedResources>
-		<link>
-			<name>classes</name>
-			<type>2</type>
-			<location>F:/AE Project/trunk/AL-Game/build/classes</location>
-		</link>
 		<link>
 			<name>database</name>
 			<type>2</type>
