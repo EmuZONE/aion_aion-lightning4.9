@@ -9,4 +9,5 @@ Dont forget to give us a star :)
 http://www.insaneaion.com
 
 # TODO
+https://github.com/ghostfur/Aion-Lightning-4.9/blob/master/TODO.txt
 List is in progress coming soon!
