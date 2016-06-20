@@ -1,7 +1,6 @@
 # Aion Lightning 4.9 Full Source NO LICENSE SYSTEM / Tools + Utils
-Open Source For Everyone! No time to lose dont wait for Aion-core/Encom/Falke and all other closed sources just join us!
-We Searching For More Help With Bugs/Fixes we never ask for money you Want to join or team? contact michelgorter@outlook.com 
-or add thesnakes on skype with more devs we can work faster! everyone is welcome! 
+Open Source For Everyone! No time to lose dont wait for Aion-core/Falke-core and all other closed sources just join!
+We Searching For More Experienced Developers You Want To Join Or Dev-Team? add thesnakes on skype all others are welcome to!
 
 Dont forget to give us a star :)
 
@@ -12,3 +11,6 @@ http://www.insaneaion.com
 https://github.com/ghostfur/Aion-Lightning-4.9/blob/master/Todo/TODO.txt
 
 List is in progress more coming soon!
+
+# DEV-TEAM
+
