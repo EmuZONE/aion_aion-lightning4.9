@@ -96,6 +96,7 @@ import java.util.zip.ZipOutputStream;
  * @author SoulKeeper
  * @author cura
  * @author Alcapwnd - reworked and removed the trash
+ * @author idhacker542 - reworked
  */
 public class GameServer {
 
@@ -162,15 +163,15 @@ public class GameServer {
         final CountDownLatch progressLatch = new CountDownLatch(parallelEngines.length);
         initalizeLoggger();
         initUtilityServicesAndConfig();
+        Util.printSection("===========================");
+		Util.printSection("=========IDFactory=========");
+        IDFactory.getInstance();
 		Util.printSection("===========Data============");
         DataManager.getInstance();
         Util.printSection("===========================");
         Util.printSection("==========Stigma===========");
 		DataManager.SKILL_TREE_DATA.setStigmaTree();
 		StigmaService.reparseHiddenStigmas();
-		Util.printSection("===========================");
-		Util.printSection("=========IDFactory=========");
-        IDFactory.getInstance();
         Util.printSection("===========================");
         Util.printSection("===========World===========");
         ZoneService.getInstance().load(null);
@@ -319,6 +320,15 @@ public class GameServer {
 
         Util.printSection("GameServerLog");
         log.info("AL GameServer started in " + (System.currentTimeMillis() - start) / 1000 + " seconds.");
+        log.info("===================================================");
+        log.info("==============# Aion Lightning Core #==============");
+        log.info("============# Developed BY AL Project #============");
+        log.info("===================================================");
+        log.info("==========# Thanks to help this project #==========");
+        log.info("===================================================");
+        log.info("Aion Ver :" + GSConfig.SERVER_VERSION);
+        log.info("Client Ver : 4.9.0.1 ");
+        log.info("====# Copyright 2015-2016 AionLightning GROUP #====");
         try {
             ZCXInfo.getInfo();
         } catch (IOException e) {
