@@ -719,6 +719,9 @@ public final class PlayerEnterWorldService {
                 case 2:
                     accountType = "VIP";
                     break;
+                case 3:
+                	accountType = "VVIP";
+                	break;
             }
             client.sendPacket(new SM_MESSAGE(0, null, "Your account is " + accountType, ChatType.GOLDEN_YELLOW));
         }
