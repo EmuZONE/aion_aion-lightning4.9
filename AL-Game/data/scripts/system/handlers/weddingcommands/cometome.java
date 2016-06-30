@@ -37,7 +37,7 @@ public class cometome extends WeddingCommand {
     @Override
     public void execute(final Player player, String... params) {
     	
-    	if player.isMarried() {
+    	if (player.isMarried()) {
     		
     		Player partner = player.findPartner();
     		
