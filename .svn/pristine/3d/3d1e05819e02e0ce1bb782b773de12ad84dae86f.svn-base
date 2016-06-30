@@ -1,1 +1,0 @@
-ALTER TABLE `broker` ADD COLUMN `is_partsale` TINYINT(1) NOT NULL AFTER `is_settled`;
