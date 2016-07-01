@@ -49,15 +49,15 @@ public class ZCXInfo {
 
     public static void getInfo() throws IOException {
         readInfo();
-        log.info("==================================================");
-        log.info("==============>Aion Lightning Core<===============");
-        log.info("==================>developed by <=================");
-        log.info("===============>Aion German Group<================");
-        log.info("==================================================");
-        log.info("Thanks to all who helped this project!");
+        log.info("===================================================");
+        log.info("==============# Aion Lightning Core #==============");
+        log.info("============# Developed BY AL Project #============");
+        log.info("===================================================");
+        log.info("==========# Thanks to help this project #==========");
+        log.info("===================================================");
+        log.info("====# Copyright 2015-2016 AionLightning GROUP #====");
         log.info("Major Patch: " + getVersion());
         log.info("Minor Patch: " + getMinor());
-        log.info("Copyright: " + getCopyright());
         log.info("==================================================");
     }
 
