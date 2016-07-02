@@ -18,8 +18,4 @@ idhacker542
 
 Ghostfur
 
-Voir
-
-dev-jet
-
-logankioma
+noKyrr 
