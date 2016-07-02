@@ -99,13 +99,15 @@ public class SkillLearnService {
 		PlayerSkillList playerSkillList = player.getSkillList();
 
 		for (SkillLearnTemplate template : skillTemplates) {
-			if (!checkLearnIsPossible(player, playerSkillList, template))
-				continue;
-
-			if (template.isStigma())
+			if (checkLearnIsPossible(player, playerSkillList, template))
+			{
+				if (template.isStigma())
 				playerSkillList.addStigmaSkill(player, template.getSkillId(), template.getSkillLevel());
-			else
+					else
 				playerSkillList.addSkill(player, template.getSkillId(), template.getSkillLevel());
+			}
+
+			
 		}
 	}
 
