@@ -27,6 +27,7 @@ import com.aionemu.gameserver.network.aion.serverpackets.SM_QUEST_ACTION;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
 import com.aionemu.gameserver.utils.PacketSendUtility;
+import com.aionemu.gameserver.services.SkillLearnService;
 
 /**
  * @author ATracer, sweetkr
@@ -91,6 +92,8 @@ public class ClassChangeService {
                     }
                 }
             }
+            //IF SIMPLE 2ND CLASS UPDATE SKILL LIST ON CHANGECLASS
+ 	    SkillLearnService.addMissingSkills(player);
         }
     }
 
