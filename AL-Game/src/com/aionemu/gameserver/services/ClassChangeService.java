@@ -91,6 +91,8 @@ public class ClassChangeService {
                     }
                 }
             }
+            //IF SIMPLE 2ND CLASS UPDATE SKILL LIST ON CHANGECLASS
+ 	    SkillLearnService.addMissingSkills(player);
         }
     }
 
