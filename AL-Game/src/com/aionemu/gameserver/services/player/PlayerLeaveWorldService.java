@@ -104,13 +104,13 @@ public class PlayerLeaveWorldService {
         // Store binding point before player logged out
         // Added by petruknisme
         
-        player.setBindPoint(new BindPointPosition(player.getWorldId(), player.getX(), player.getY(), player.getZ(), player.getHeading()));
-        DAOManager.getDAO(PlayerBindPointDAO.class).store(player);
-        
-        // just for logging
-        log.info("Store binding point before logged out " + player.getName() + " x " + player.getX() + " y " + player.getY() + " z " + player.getZ() + " heading " + player.getHeading());
-        
-        log.info("Player logged out: " + player.getName() + " Account: " + (player.getClientConnection() != null ? player.getClientConnection().getAccount().getName() : "disconnected"));
+    // need to store last position, not to bind it on the logout point 
+    //player.setBindPoint(new BindPointPosition(player.getWorldId(), player.getX(), player.getY(), player.getZ(), player.getHeading()));
+    	if(player.getBindPoint() != null)//cannot accept null value to db
+        	DAOManager.getDAO(PlayerBindPointDAO.class).store(player);
+    
+    	// just for logging
+	log.info("Store last location point before logged out " + player.getName() + " x " + player.getX() + " y " + player.getY() + " z " + player.getZ() + " heading " + player.getHeading());
         FindGroupService.getInstance().removeFindGroup(player.getRace(), 0x00, player.getObjectId());
         FindGroupService.getInstance().removeFindGroup(player.getRace(), 0x04, player.getObjectId());
         player.onLoggedOut();
