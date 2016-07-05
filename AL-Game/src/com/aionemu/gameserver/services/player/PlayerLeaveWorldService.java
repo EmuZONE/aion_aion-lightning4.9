@@ -111,6 +111,8 @@ public class PlayerLeaveWorldService {
     
     	// just for logging
 	log.info("Store last location point before logged out " + player.getName() + " x " + player.getX() + " y " + player.getY() + " z " + player.getZ() + " heading " + player.getHeading());
+        log.info("Player logged out: " + player.getName() + " Account: " + (player.getClientConnection() != null ? player.getClientConnection().getAccount().getName() : "disconnected"));
+        
         FindGroupService.getInstance().removeFindGroup(player.getRace(), 0x00, player.getObjectId());
         FindGroupService.getInstance().removeFindGroup(player.getRace(), 0x04, player.getObjectId());
         player.onLoggedOut();
